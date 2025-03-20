@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins,serif";
+}
+
+html,
+body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+.dbhtml,
+.dbBody{
+    background: linear-gradient(50deg, #d67eff, #7ef0ff, #ffffff);
+    display: contents;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    width: calc(100% - 100px);
+    justify-content: start;
+    animation: shimmer 1.5s infinite linear;
+}
+
+.dbDivclass{
+    border: 15px transparent #a66aff;
+    text-align: center;
+    background: linear-gradient(50deg, #ff7777, #edecec, #d67eff, #7ef0ff);
+    border-block-end: 1px solid #2b522d;
+}
+.dbH1{
+    font-family: cursive;
+}
+.con{
+    font-weight: 1000;
+   background: linear-gradient(90deg, #767676,#ff7777,#f8e853);
+    border-radius: 10vh;
+    padding: 5vh;
+    cursor: crosshair;
+    box-shadow: 0 5px 12px rgba(255, 251, 0, 0.808);
+text-shadow: 0 5px 12px rgba(255, 251, 0, 0.808);
+animation: slide 5.5s infinite linear;
+}
+
+.con:hover{
+transform: scale(1.03);
+    cursor: not-allowed;
+    box-shadow: 0 5px 12px rgba(3, 253, 253, 0.836);
+    text-shadow: 0 4px 10px rgb(0, 225, 255);
+}
+
+
+@keyframes slide{
+    10%{transition: all;
+        background: #767676;
+        
+    }
+    50%{
+        transition: 0ms;
+        background: #725959;
+    }
+    100%{
+        transition: none;
+        background: #2b522d;
+    }
+}
+body{
+    background: linear-gradient(135deg, #c57eff,#b375ff,#ba6aff);
+}
+
+.container{
+    width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 247, 255, 0.897);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    background: linear-gradient(135deg,#bf8bff,#a66aff);
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+.icon{
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+li:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgb(0, 255, 234);
+}
+
+.dragging{
+    border: 2px dashed #fff;
+    opacity: 0.6;
+    color: #edecec;
+    background: 0000007f;
+}
+
+.drop-target{
+    border: 2px dashed rgb(255, 255, 255,);
+}
+a{
+    border-radius: 5vh;
+    color: aliceblue;
+    text-decoration: dashed;
+    text-shadow: 0 4px 10px rgb(3, 226, 255);
+    
+}
+
+a:hover{
+    box-shadow: 0 4px 10px;
+    color: aliceblue;
+
+}
+
